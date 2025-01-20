@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obj to Math Converter</title>
+</head>
+<body>
+    <h1>Martin's .obj to Desmos math converter</h1>
+    <label for="file-input">Select obj file:</label>
+    <input id="file-input" type="file" accept=".obj">
+    <hr>
+
+    <button type="button" onclick="copyVertexes()">Copy vertex array</button>
+    <p id="vertex-array-result" style="line-break: anywhere;"></p>
+    <button type="button" onclick="copyNormals()">Copy normal array</button>
+    <p id="normal-array-result" style="line-break: anywhere;"></p>
+    <button type="button" onclick="copyFaces()">Copy face indices</button>
+    <p id="face-index-result" style="line-break: anywhere;"></p>
+    <button type="button" onclick="copyFaceNormals()">Copy face normal indices</button>
+    <p id="face-normal-index-result" style="line-break: anywhere;"></p>
+
+    <hr>
+    <div id="file-objects"></div>
+    <hr>
+    <div id="file-vertices"></div>
+    <hr>
+    <div id="file-normals"></div>
+    <hr>
+    <div id="file-faces"></div>
+</body>
+<script src="obj_math_converter.js"></script>
+</html>
