@@ -2,9 +2,14 @@
 // dia 2: UI de rotação e zoom, melhoria de cores
 // dia 3: html conversor de .obj para arrays de pontos e faces
 // dia 4: normais das faces e shader de luminosidade das faces
-// dia 5: fixed browser blocking clipboard, z value for vertices
-// dia 6: angle between face normal and camera to render faces in correct order
-// dia 7: 
+// dia 5: bloqueio de clipboard do navegador consertado, valor z para vértices
+// dia 6: ângulo entre normal da face e câmera para renderizar faces na ordem correta
+// dia 7: UI de seleção de cor e opacidade
+// dia 8: correção da inversão da câmera no eixo x, UI de ativação/desativação das faces, arestas e vértices
+
+// to-do:
+// câmera em perspectiva (em distância focal)
+// shader renderizar faces por ordem de distância do ponto central da face
 
 const input_elem = document.getElementById('file-input');
 
